@@ -1,0 +1,5 @@
+Both the data types are implementation of List 
+Array List increases the size by 50 % resulting in better memory management than vectors 
+where as vectors increses the size by 100 % 
+Arraylist is not thread safe but vector is
+ArrayList is faster as compared to vector 
