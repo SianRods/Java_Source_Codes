@@ -1,4 +1,4 @@
-// In roder to Implement the Concept of threads just Extend the class Thread 
+// In order to Implement the Concept of threads just Extend the class Thread 
 // And now your class becomes a Thread 
 
 class A extends Thread{
