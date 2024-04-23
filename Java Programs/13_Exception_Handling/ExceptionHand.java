@@ -14,8 +14,12 @@ public class ExceptionHand {
         System.out.println("Result"+z);
         // If the Divisor is Zerov --> Runtime Exception
         }
+        catch(ArithmeticException e){
+            System.out.println("Arithmetic Exception has Occured Try Again !!");
+        }
         catch(Exception e){
-            System.out.println("Error has Occured Try Again !!");
+            System.out.println(e);
+            // Printing e will print the inbuilt message for that exception
         }
     }
 }
