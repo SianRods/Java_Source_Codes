@@ -25,7 +25,7 @@ public class FrameBasics{
         // pass file name or file path to the contructor of the class 
         ImageIcon icon = new ImageIcon("Git-Logo-2Color.png"); // Create Image Icon
         
-        frame.setIconImage(icon.getImage()); // Set the icon of the frame 
+        frame.setIconImage(icon.getImage()); // Adds the icon component to  the frame 
 
         //Setting Custom Background color 
         // Concept of Method Chaining is used here 
