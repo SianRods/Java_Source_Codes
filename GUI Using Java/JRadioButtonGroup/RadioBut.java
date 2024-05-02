@@ -27,14 +27,13 @@ class frame extends JFrame implements ActionListener {
         // ADDING ALL THE JRADIO BUTTONS IN THE SINGLE GROUP
 
         grp = new ButtonGroup();
-        
-        // ADDING ALL THE RADIO BUTTONS TO THE BUTTONGROUPING  
+
+        // ADDING ALL THE RADIO BUTTONS TO THE BUTTONGROUPING
         grp.add(hamburger);
         grp.add(pizza);
         grp.add(shwarma);
 
-
-        // ADDING ALL THE COMPONENTS TO THE FRAME 
+        // ADDING ALL THE COMPONENTS TO THE FRAME
 
         this.add(pizza);
         this.add(hamburger);
