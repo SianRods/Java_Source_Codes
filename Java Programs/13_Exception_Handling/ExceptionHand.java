@@ -36,3 +36,8 @@ public class ExceptionHand {
  * 
  * --> We can also use try_catch for specific Exceptions Only 
  */
+
+//  Types of Exception (Compile Time ) there are Checked and Unchecked(Runtime Exceptions) Exceptions
+//  1. Checked Excpetions Must be Compulsorily Handled in Java or the code Does not Compile 
+//  2. Unchecked Exceptions may or may not be handled the java will through an Exception Error and the flow of the
+//  Code will be interupted if the Exception is not handled 

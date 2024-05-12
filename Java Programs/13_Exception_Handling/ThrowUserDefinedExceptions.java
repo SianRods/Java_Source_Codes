@@ -1,6 +1,5 @@
 
-
-class MyException extends Exception{
+class MyException extends Exception {
     @Override
 
     public String getMessage() {
@@ -8,18 +7,16 @@ class MyException extends Exception{
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "Custome To String has been Executed !";
     }
 }
 
-
-
-public class ThrowUserDefinedExceptions{
+public class ThrowUserDefinedExceptions {
     public static void main(String[] args) {
-        try{
+        try {
             throw new MyException();
-        }catch(MyException e){
+        } catch (MyException e) {
             System.out.println(e.getMessage());
             System.out.println(e.toString());
         }
