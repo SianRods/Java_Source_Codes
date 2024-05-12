@@ -1,4 +1,9 @@
 import java.util.*;
+// ----------------------HEAD NOTES ------------------------------//
+// The throws Keyword implies that the checked exception for a called method
+// must be necessarily handled
+// When we want to explicitly throw an Exception we have to throw an instance of that Exception . i.e object of the Exception 
+// must be thrown usng the 'throw ' --> key explicty 
 
 public class PracticeException {
 
@@ -35,12 +40,10 @@ class nameNotEmptyException extends Exception {
 	public String getName(String one, String two, String three) throws nameNotEmptyException {
 
 		if(one.isEmpty() || two.isEmpty()||three.isEmpty()){
-			throw nameNotEmptyException();
+			throw new nameNotEmptyException();
 		}
 		return one + two + three;
 	}
 
 }
 
-// The throws Keyword implies that the checked exception for a called method
-// must be necessarily handled
