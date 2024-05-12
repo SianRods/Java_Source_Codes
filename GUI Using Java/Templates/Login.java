@@ -9,7 +9,7 @@ public class Login {
 }
 
 class frame extends JFrame implements ActionListener {
-    JButton but ;
+    JButton but;
 
     frame() {
         this.setVisible(true);
@@ -17,11 +17,8 @@ class frame extends JFrame implements ActionListener {
         this.setDefaultCloseOperation(this.EXIT_ON_CLOSE);
         // LAYOUT SHOULLD BE GRID LAYOUT WITH NUMBER OF COLOUMNS AND ROWS SSPECIFIED
         this.setLayout(new GridLayout(2, 2, 10, 10)); // SPECIFYING THE ROWS , COLOUMNS , GAP BETWEEN GRID BLOCKS
-        // SET THE PREFFERED SIZE FOR THE LAYOUT 
-        this.setPreferredSize(new Dimension(500,500));
-
-
-
+        // SET THE PREFFERED SIZE FOR THE LAYOUT
+        this.setPreferredSize(new Dimension(500, 500));
 
         JTextField username = new JTextField();
         username.setFont(new Font("sans serif", Font.BOLD, 14));
@@ -32,14 +29,13 @@ class frame extends JFrame implements ActionListener {
 
         username.setText("Enter Username");
         panel.add(username);
-        
+
         pass.setText("Enter Password ");
-        
+
         panel.setBackground(Color.BLUE);
         panel.add(pass);
-        
+
         // label.setText("USERNAME :/n"+"PASSWORD:");
-       
 
         // ADDING LABEL TO PANEL
 
@@ -61,22 +57,19 @@ class frame extends JFrame implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource()==but) {
-            new newWindow(); // LAUNCH A NEW WINDOW 
+        if (e.getSource() == but) {
+            new newWindow(); // LAUNCH A NEW WINDOW
         }
-        
+
     }
 }
 
+class newWindow extends JFrame {
 
-
-
-class newWindow extends JFrame{
-
-    newWindow(){
+    newWindow() {
         this.setVisible(true);
         this.setDefaultCloseOperation(this.EXIT_ON_CLOSE);
-        this.setPreferredSize(new Dimension(500,500));
+        this.setPreferredSize(new Dimension(500, 500));
 
         // SETTING LAYOUT MANAGER TO NULL
         this.setLayout(null);
@@ -85,7 +78,7 @@ class newWindow extends JFrame{
         JLabel label = new JLabel();
         label.setText("You have Successfully Logged in !");
         label.setBackground(Color.BLACK);
-        label.setFont(new Font("sans serif",Font.BOLD,14));
+        label.setFont(new Font("sans serif", Font.BOLD, 14));
         label.setForeground(Color.WHITE);
 
         this.add(label);
