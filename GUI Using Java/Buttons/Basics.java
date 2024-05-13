@@ -27,7 +27,8 @@ public class Basics implements ActionListener,MouseMotionListener {
         myBut.setBounds(250, 250, 100, 50);
         myBut.setText("Use Me !");
         myBut.addMouseMotionListener(new Basics() /*Adding the Frame to be Worked with */);
-        myBut.addActionListener(new Basics());
+        myBut.addActionListener(new Basics()); // BUTTON IS ADDED FOR WHICH FRAME IS TO BE SPECIFIED 
+      
         frame.add(myBut);
         
 
