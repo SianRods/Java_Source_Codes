@@ -6,7 +6,7 @@
                     ^
  * 
  *  we have to use the try catch block in order to catch InterruptedException
- * 
+ * Interrupted Exception is a Checked  Exception
  * 
  */
 

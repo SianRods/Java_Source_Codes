@@ -1,8 +1,8 @@
 
 /*
 We will be Implementing the concept of Threads using the Runnable Interface 
-The Thread class  also implements the Runnable Interface which only 
-has void run method . So by implementing the Runnable we will have two create objects of 
+The Thread class  also implements the Runnable Interface which only has void run method 
+ So by implementing the Runnable we will have two create objects of 
 thread class in main class  and then pass the required objects of Runnable as a parameter 
 to the Constructor of the Thread Class
  */
@@ -37,6 +37,9 @@ class B implements Runnable{
 
 public class RunClass{
     public static void main(String args[]){
+
+        //  Using the Compile Time Polymorphism to Refer to A and B class using the Reference of the 
+        // Parent RUNNABLE Class 
         Runnable a = new A();
         Runnable b = new B();
 
