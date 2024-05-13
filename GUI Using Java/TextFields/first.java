@@ -30,7 +30,7 @@ class frame extends JFrame implements ActionListener {
         this.setSize(getPreferredSize());
 
         field = new JTextField();
-        field.setSize(new Dimension(250, 40));
+        field.setPreferredSize(new Dimension(250, 40));
 
         but = new JButton();
         but.setText("Submit");
