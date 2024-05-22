@@ -30,4 +30,5 @@
    * Unlike C in java without encountering Memory Problems we can allocate user inputted 
    * array size 
    * Incase of C Preinitialised values for given set of variables  is always  garbage value
+   * However it is very Important to Specify the Array Sixe while using the new Keyword 
    */
