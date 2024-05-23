@@ -7,7 +7,7 @@
  *   float -- > Float 
  *   char --> Character 
  *   double --> Double
- * ex) using integer class to take input directly from the command prompt
+ * ex) using Integer class to take input directly from the command prompt
  *  Unboxing --> The Automatic conversion of Primitive data type to Wrapper class  is called as unboxing which is made by Java Compiler 
  * 
  * Boxing --> The reversal of Unboxing is called as Boxing 

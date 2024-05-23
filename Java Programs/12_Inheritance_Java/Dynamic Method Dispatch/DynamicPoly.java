@@ -20,7 +20,7 @@ public class DynamicPoly {
 
 // In java poly --> 1. Static (Overloading )  2. Dynamic (Run time Polymorphism )
 // Dynamic Polymorphism can be implemented using the concept of inheritance 
-//  When ref of super class make the object of child class --> Dynamic Polymorphism 
+//  When ref of Parent class make the object of child class --> Dynamic Polymorphism 
 // We can keep on changing the use case of the superclass object as per needs
 
 class Computer{

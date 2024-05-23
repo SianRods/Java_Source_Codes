@@ -7,6 +7,8 @@ public class Wrapper01 {
         // Using Get Class function of Boolean Data types 
        System.out.println(result.getClass());
        a =10;b=20;
+       int sum = a+b;
+       System.out.println(sum);
        if (a>b) {
         System.out.println("Program runs successfully");
         } else {

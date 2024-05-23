@@ -35,8 +35,8 @@ class B implements Runnable{
 
 public class PracTwo{
 	public static void main (String args[]){
-		Runnable one = new A();
-		Runnable two = new B();
+		Runew B();nable one = new A();
+		Runnable two = n
 
 		Thread t1 = new Thread(one);
 		Thread t2 = new Thread(two);

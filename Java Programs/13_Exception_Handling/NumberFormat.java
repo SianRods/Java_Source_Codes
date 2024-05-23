@@ -6,5 +6,10 @@ public class NumberFormat {
 		int num ;
 		System.out.println("Enter an Integer Number : ");
 		num=sc.nextInt();
+		try{
+			throw new NumberFormatException();
+		}catch(Exception E ){
+			System.out.println(E);
+		}
 	}
 }
