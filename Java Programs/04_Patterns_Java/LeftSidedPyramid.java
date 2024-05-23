@@ -1,6 +1,6 @@
 // package Java Programs.Patterns_Java;
 import java.util.Scanner;
-public class Pattern1 {
+public class LeftSidedPyramid {
     public static void main(String args[]){
         // Printing Star Pattern in C 
         int i,j,rows;

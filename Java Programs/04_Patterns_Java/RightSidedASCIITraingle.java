@@ -13,7 +13,7 @@ IHGFE
 
  */
 
-public class Pattern2 {
+public class RightSidedASCIITraingle {
     public static void main (String args[]){
         // Using Hard coded Inputs  i=5 for below
         int i,j,temp=64;

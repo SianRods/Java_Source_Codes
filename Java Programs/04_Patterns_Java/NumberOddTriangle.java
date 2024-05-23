@@ -1,6 +1,6 @@
 // package Java Programs.Patterns_Java;
 
-public class Pattern3 {
+public class NumberOddTriangle {
     public static void main ( String args[]){
         int i,j;
         // Assuming i=7ṇ
