@@ -58,11 +58,13 @@ public class LoginForm extends JFrame implements ActionListener {
 		 submit = new JButton();
 		submit.setText("SUBMIT");
 		submit.addActionListener( this);
+		submit.setFocusable(false);
 
 
 		 clear = new JButton();
 		clear.setText("CLEAR");
 		clear.addActionListener(this);
+		clear.setFocusable(false);
 
 
 		// adding the buttons to the third panels 
@@ -103,10 +105,15 @@ public class LoginForm extends JFrame implements ActionListener {
 			String user = "Sian";
 			String pass = " pass";
 			JOptionPane.showMessageDialog(null,"Hello World ","Dialog Box ",JOptionPane.INFORMATION_MESSAGE);
+			submit.setBackground(Color.GREEN);
 
 			if(username.getText().equals(user) && password.getPassword().equals(pass)){
 				System.out.println("SUCCESSFULLY LOGGED IN !");
 			}
+		}else if(e.getSource() == clear){
+			password.setText("");
+			username.setText("");
+			clear.setBackground(Color.cyan);
 		}
 	}
 }
