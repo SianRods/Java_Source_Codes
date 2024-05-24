@@ -3,7 +3,7 @@ import java.awt.*; // ALL PACKAGES RELATED TO AWT
 import java.awt.event.*; //ALL PACKAGES RELATED TO EVENT HANDLING 
 import java.util.concurrent.Flow;
 
-// ------------------->USE CASE 
+// -------------------USE CASE---------------------------------------------- 
 // PLACES COMPONENTS IN A ROW , SIZED AT THEIR PREFFERED SIZE 
 //  IF THE HORZONTAL SPACE IN THE CONTAINER IS TOO SMALL 
 //  THE FLOWLAYOUT CLASS USES THE NEXT AVAIALBLE ROW 

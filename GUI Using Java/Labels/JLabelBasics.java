@@ -38,7 +38,8 @@ public class JLabelBasics{
         //  Alignment HoRIZONTAL AND VERTICAL W.R.T Icon in SWING 
         label.setHorizontalTextPosition(JLabel.CENTER);
         // Now the text will be aligned left with respect to the icon 
-        // Note for the purpose of alignment there are only three possible settings CENTRE,LEFT,RIGHT 
+        // Note for the purpose of alignment there are only three possible settings CENTRE,LEFT,RIGHT --> FOR LABELS 
+        // here the CENTRE and the TOP are the final Static variables
         label.setVerticalTextPosition(JLabel.TOP);
 
         // Customizing the TEXT_FONT_STYLE & TEXT_COLOR
