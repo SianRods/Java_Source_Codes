@@ -16,6 +16,7 @@ public class InputMethods {
 		System.out.println("Enter any Number : ");
 		int num = Integer.parseInt(bufr.readLine());
 		System.out.println(num);
+		bufr.close();
 	}
 }
 
