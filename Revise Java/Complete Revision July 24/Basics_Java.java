@@ -15,9 +15,7 @@ class Basics_Java {
 		System.out.println(letter);
 		boolean status = true;
 		System.out.println(status);
-
 		double decimals = 50485.34353;
-
 		System.out.println(decimals);
 	}
 }
