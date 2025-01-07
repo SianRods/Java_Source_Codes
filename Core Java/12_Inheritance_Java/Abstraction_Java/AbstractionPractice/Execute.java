@@ -19,6 +19,7 @@ abstract class Computer{
 
 }
 
+
 class Mobile extends Computer {
 	public int ram ;
 	public double price ;

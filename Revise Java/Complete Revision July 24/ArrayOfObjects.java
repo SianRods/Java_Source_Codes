@@ -13,7 +13,7 @@ public class ArrayOfObjects {
 		// Adding all the objects
 		for (int i = 0; i <limit; i++) {
 			arr[i] = new Solution();
-
+			
 		}
 
 		System.out.println("The given Array Consists of : " + arr.length + " Objects !");
