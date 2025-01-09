@@ -1,0 +1,19 @@
+Data BASE name ----> Reservation
+    Table --> Information
+    1. id --> Primary Key AutoIncrement (id)
+    2. Name (g_name)
+    3. Room Number
+    4. Contact Number of the Guest
+    5. Time of Reservation
+    +------------+--------------+------+-----+-------------------+-------------------+
+    | Field      | Type         | Null | Key | Default           | Extra             |
+    +------------+--------------+------+-----+-------------------+-------------------+
+    | id         | int          | NO   | PRI | NULL              | auto_increment    |
+    | guest_name | varchar(255) | NO   |     | NULL              |                   |
+    | room_no    | int          | NO   |     | NULL              |                   |
+    | contact    | varchar(10)  | NO   |     | NULL              |                   |
+    | date       | timestamp    | YES  |     | CURRENT_TIMESTAMP | DEFAULT_GENERATED |
+    +------------+--------------+------+-----+-------------------+-------------------+
+
+It is important to realize that while INJECTION OF SQL  QUERIES INTO JDBC APPLICATION STRING INSERTION "SIAN" WHEN WE DO "+NAME+"
+--> CONVERTS TO SIAN ONLY WHICH IS NOT IDENTIFIED AS A STRING AND NOT TO "SIAN"
