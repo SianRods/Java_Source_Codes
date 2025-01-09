@@ -1,0 +1,12 @@
+1. Class.forName() --> is a function which is used to load class dynamically at runtime and not at compile time
+using this we load the driver class from the package.
+It is important to know that it throws ClassNotFoundException and hence it must be declared in the method signature
+
+2. Once the Driver class is properly loaded during runtime we can establish the connection with the database
+ we load the connection and then try to load it into the Connection reference Variable
+ Connection connnet = DriverManager.getConnection(url,username,password);
+
+3.using the Established connection in the 'con' variable we create a statement variable so that we can execute the
+query using the statement variable and use ReadSet variable to read it serially
+
+4. After using all the variable used to establish close all the variable

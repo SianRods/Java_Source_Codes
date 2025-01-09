@@ -3,7 +3,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 
-public class Main {
+public class DemoJDBC {
     public static void main(String[] args) {
         // Database URL
         String url = "jdbc:mysql://localhost:3306/jdbc";

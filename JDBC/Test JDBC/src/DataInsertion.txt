@@ -1,0 +1,7 @@
+1. There are mainly two important methods in the statement class
+    a.executeQuery(String query) --> to retreive the data and read the same using the ResultSet()
+    b.executeUpdate(String query)--> To add the data to the db [it returns the number of rows affected after update
+     execution]
+2. There are also prepaid statements which are much faster as compared to that of any other statements are forms
+    important part of JDBC
+3. executeUpdate() --. can also be used to delete tuple from the table using a required field

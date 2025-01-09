@@ -1,18 +1,18 @@
 import java.util.*;
 
 public class ThrowExceptionObject {
-	public static void main (String args[]){
-		Scanner sc =new Scanner(System.in );
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
 		int a = sc.nextInt();
 		int b = sc.nextInt();
-		Area area= new Area();
+		Area area = new Area();
 
-		try{
+		try {
 			throw new AreaNotZero();
-		}catch(AreaNotZero e){
+		} catch (AreaNotZero e) {
 			System.out.println(e);
 		}
-		
+
 	}
 }
 
@@ -30,7 +30,7 @@ class AreaNotZero extends Exception {
 
 class Area {
 
-	public double getArea (int radius) {
+	public double getArea(int radius) {
 		return radius * radius * 3.14;
 	}
 
@@ -38,5 +38,4 @@ class Area {
 		return length * breadth;
 	}
 
-	
 }
