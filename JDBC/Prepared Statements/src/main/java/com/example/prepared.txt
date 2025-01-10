@@ -1,0 +1,5 @@
+Prepared Statements provides us with the PlaceHolders --> More Secured
+    1.here the values of the placeholder may be filled at a later stage before executing the query
+    2.Helps impove performance as they are precompiled statements hence once they are compiled on the database servers
+      they can be used to run the same query efficiently
+Normal Statements--> SQL injection and breaching of the database;
