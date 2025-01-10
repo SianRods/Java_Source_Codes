@@ -6,7 +6,7 @@ public class ConnectJDBC {
         // In this  File we will try to establish connection with database and read some files using queries
         String url = "jdbc:mysql://localhost:3306/employee";
         String username = "root";
-        String password = "rodrigos@250";
+        String password = "pass@123";
         String query = " select * from employee;";
         try {
             Class.forName("com.sql.jdbc.Driver");

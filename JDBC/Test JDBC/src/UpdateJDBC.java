@@ -6,7 +6,7 @@ public class UpdateJDBC {
         // In this  File we will try to establish connection with database and read some files using queries
         String url = "jdbc:mysql://localhost:3306/college";
         String username = "root";
-        String password = "rodrigos@250";
+        String password = "pass@123";
         String insertQuery = "UPDATE student set name='Boney.M' WHERE id=201;";
         try {
             Class.forName("com.sql.jdbc.Driver");

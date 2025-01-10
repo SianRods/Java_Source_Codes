@@ -12,7 +12,7 @@ public class Main {
 
     private static final String username = "root";
 
-    private static final String password = "rodrigos@250";
+    private static final String password = "pass@123";
 
     public static void main(String args[]) throws ClassNotFoundException, SQLException {
         // Establishing the connection and Displaying the Menu Options
