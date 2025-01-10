@@ -1,0 +1,9 @@
+It becomes important to understand how actually images are stored in an RDBMS like MYSQL 
+1. STORING === images(jpeg) --> binaryforms (array of bytes)--> are written to the database 
+2. RETREIVING === images(binary format )--> read into array of bytes --> reconverted using  outputstream to File io manager
+there are several exceptions which are to be necssarily handled here 
+like FileNotFoundException ; IOException , etc ;
+
+Database Table --> id AUTO_IINCREMENT PRIMARY KEY 
+---> longlblob (datatype used for storing binary number in long format)
+---> TIMESTAMP for recording when actually did the image was recorded in the database
