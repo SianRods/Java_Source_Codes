@@ -7,6 +7,8 @@ public class DeletionJDBC {
         String url = "jdbc:mysql://localhost:3306/college";
         String username = "root";
         String password = "pass@123";
+
+        // Deleting the Student with id=1
         String insertQuery = "DELETE FROM student WHERE id=1;";
         try {
             Class.forName("com.sql.jdbc.Driver");

@@ -4,4 +4,4 @@
      execution]
 2. There are also prepaid statements which are much faster as compared to that of any other statements are forms
     important part of JDBC
-3. executeUpdate() --. can also be used to delete tuple from the table using a required field
+3. executeUpdate() --> can also be used to delete tuple from the table using a required field

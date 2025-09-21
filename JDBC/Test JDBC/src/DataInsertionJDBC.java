@@ -7,6 +7,9 @@ public class DataInsertionJDBC {
         String url = "jdbc:mysql://localhost:3306/college";
         String username = "root";
         String password = "pass@123";
+
+        // Inserting the data into database using Statement.executeUpdate(insertQuery);
+        
         String insertQuery = "INSERT INTO student(id,name,age) VALUES (201,'Kingsley',21);";
         try {
             Class.forName("com.sql.jdbc.Driver");

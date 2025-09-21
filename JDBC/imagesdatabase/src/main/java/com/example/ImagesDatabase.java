@@ -31,7 +31,7 @@ public class ImagesDatabase {
             // Reads the file from the specified path
             FileInputStream fis = new FileInputStream(file_path);
 
-            //Creating an byte of required size to read the image input 
+            //Creating a byte of required size to read the image input 
             byte[] image = new byte[fis.available()];
 
             // Now reading the binary input using the FileInputStream.read(array_to_be_read_in)

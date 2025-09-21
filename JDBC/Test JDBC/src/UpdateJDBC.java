@@ -7,6 +7,8 @@ public class UpdateJDBC {
         String url = "jdbc:mysql://localhost:3306/college";
         String username = "root";
         String password = "pass@123";
+
+        // Updating the values in the database
         String insertQuery = "UPDATE student set name='Boney.M' WHERE id=201;";
         try {
             Class.forName("com.sql.jdbc.Driver");
