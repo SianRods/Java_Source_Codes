@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                               http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="programmer" class="com.rods.Programmer" autowire="byType">
+        <property name="age" value="21"></property>
+        <property name="name" value="Sian"></property>
+
+
+    </bean>
+
+
+    <bean id="laptop" class="com.rods.Laptop" primary="false">
+
+    </bean>
+
+    <!--
+        lazy-init = true Meaning the objects will only be created iff there is explicit
+        requirement to use that object . Also if there exists a bean which is singleton
+        and it has been autowired with lazy-init bean then in this case even if the bean
+        if lazy-init singleton it will be created on context creation itself (creating the container)
+
+
+    -->
+    <bean id="desktop" class="com.rods.Desktop" primary="true" lazy-init="true">
+
+    </bean>
+
+</beans>

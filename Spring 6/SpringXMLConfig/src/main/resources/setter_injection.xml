@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                               http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="programmer" class="com.rods.Programmer" scope="singleton">
+        <property name="age" value="21"></property>
+        <property name="name" value="Sian"></property>
+
+        <!--Note that in this case we are using the laptop object which has already been created in the
+         container and then refereing the object in the container of laptop to the programmer's class-->
+        <property name="computer" ref="laptop"></property>
+    </bean>
+    <bean id="laptop" class="com.rods.Laptop" scope="singleton"/>
+
+</beans>

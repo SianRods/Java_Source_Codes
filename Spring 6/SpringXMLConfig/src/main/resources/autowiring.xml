@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                               http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="programmer" class="com.rods.Programmer" autowire="byType">
+        <property name="age" value="21"></property>
+        <property name="name" value="Sian"></property>
+
+        <!-- Here we are using the computer and reffering it to the laptop . In the below method we have to manually inject the
+              dependencies in the code -->
+        <!--<property name="computer" ref="desktop"></property>-->
+
+    </bean>
+
+
+    <bean id="laptop" class="com.rods.Laptop" primary="false">
+
+    </bean>
+
+    <bean id="desktop" class="com.rods.Desktop" primary="true">
+
+    </bean>
+
+</beans>

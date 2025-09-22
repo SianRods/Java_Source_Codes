@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                               http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="programmer" class="com.rods.Programmer" scope="singleton">
+        <!--When we create the objects majority of the times we want our object to intialize it's
+         attributes using it's contructor -->
+        <!--        <constructor-arg value="21"/>-->
+        <!--        <constructor-arg ref="laptop"/>-->
+        <!--        <constructor-arg value="Default_Programmer"/>-->
+
+        <!--        Using the index values in order to inject the values in the constructor  -->
+                <constructor-arg index="2" value="Default_Programmer"/>
+                <constructor-arg index="1" ref="laptop"/>
+                <constructor-arg index="0" value="21"/>
+
+
+    </bean>
+
+
+    <bean id="laptop" class="com.rods.Laptop" scope="singleton">
+
+    </bean>
+
+</beans>
