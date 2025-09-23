@@ -18,7 +18,7 @@ public class MethodsInStrings {
         name.indexOf("a"); // It is of the Data type int as it returns the index
         System.out.println("The Letter a in my name is " + name.indexOf("a"));
 
-        // Tp Check if a given String is Empty or not -->It return a boolean Value
+        // To Check if a given String is Empty or not -->It return a boolean Value
         boolean result = name.isEmpty();
         System.out.println("Is my Name Empty : " + result);
 
@@ -37,7 +37,7 @@ public class MethodsInStrings {
         System.out.println("This is the newer String : \n"+New_Updated);
 
         // Replacing a given Character with new one using Replace Method --> String Data Type 
-        // Replacement will take place on encountering the charater once 
+        // Replacement will take place on encountering the charater once ==> entountering character once
         name.replace("r", "o");
         System.err.println(name);
         String s1 ="Sian Rodrigues ";

@@ -22,6 +22,7 @@ class Parent {
         System.out.println("This is the Constructor of the Parent Class ");
     }
 }
+
 // Here it is important to note that as the child class inherits the Parent class all the 
 //  Attributes as well as constructors of the parent class are inherited by the child class 
 

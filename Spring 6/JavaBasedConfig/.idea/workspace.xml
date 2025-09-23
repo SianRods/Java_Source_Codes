@@ -5,48 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e4b50d00-7bfd-46d8-95cb-f98a43d91181" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Hibernate/HQL_Caching/src/main/java/com/rods/FilteredHQL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/HQL_Caching/src/main/java/com/rods/GetByIdDifference.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/HQL_Caching/src/main/java/com/rods/L2Caching.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/HQL_Caching/src/main/java/com/rods/Laptop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/HQL_Caching/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/RelationalMapping/src/main/java/com/rods/FetchCaching.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/RelationalMapping/src/main/java/com/rods/Laptop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/RelationalMapping/src/main/java/com/rods/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Hibernate/RelationalMapping/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rods/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rods/Computer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rods/Config/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rods/Desktop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rods/Laptop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/rods/Programmer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/rods/AppTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringXMLConfig/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringXMLConfig/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringXMLConfig/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringXMLConfig/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringXMLConfig/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringXMLConfig/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringXMLConfig/src/main/java/com/rods/Autowiring.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringXMLConfig/src/main/java/com/rods/Computer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringXMLConfig/src/main/java/com/rods/ConstructorInjection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringXMLConfig/src/main/java/com/rods/Containers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringXMLConfig/src/main/java/com/rods/Desktop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringXMLConfig/src/main/java/com/rods/IOCDependencyInjection.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringXMLConfig/src/main/java/com/rods/Laptop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringXMLConfig/src/main/java/com/rods/Programmer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringXMLConfig/src/main/java/com/rods/SetterInjection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringXMLConfig/src/main/resources/autowiring.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringXMLConfig/src/main/resources/constructor_injection.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringXMLConfig/src/main/resources/inner-bean.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringXMLConfig/src/main/resources/lazy-bean.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringXMLConfig/src/main/resources/setter_injection.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringXMLConfig/src/main/resources/spring_cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SpringXMLConfig/src/test/java/com/rods/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/rods/InjectionTypes.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot/src/main/java/com/rods/springboot/LayersInDev.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot/src/main/java/com/rods/springboot/model/Computer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot/src/main/java/com/rods/springboot/model/Desktop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot/src/main/java/com/rods/springboot/model/Laptop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot/src/main/java/com/rods/springboot/model/Programmer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringBoot/src/main/java/com/rods/springboot/service/LaptopService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Core Java/00_InputMethods_Java/InputMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Core Java/00_InputMethods_Java/InputMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Core Java/01_Basics_Java/DataTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Core Java/01_Basics_Java/DataTypes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Core Java/01_Basics_Java/Output.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Core Java/01_Basics_Java/Output.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Core Java/01_Basics_Java/ParsingInJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Core Java/01_Basics_Java/ParsingInJava.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Core Java/01_Basics_Java/StringBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Core Java/01_Basics_Java/StringBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Core Java/02_Conditional_Statements_Java/SwitchCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Core Java/02_Conditional_Statements_Java/SwitchCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Core Java/05_Arrays_Java/ArrayDel.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Core Java/05_Arrays_Java/ArrayDel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Core Java/05_Arrays_Java/JaggedArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Core Java/05_Arrays_Java/JaggedArrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Core Java/05_Arrays_Java/MethodsArrays.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Core Java/05_Arrays_Java/MethodsArrays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Core Java/05_Arrays_Java/SmallestElementColoumn.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Core Java/05_Arrays_Java/SmallestElementColoumn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Core Java/06_Strings_Java/Config_Strings.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Core Java/06_Strings_Java/Config_Strings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Core Java/06_Strings_Java/MethodsInStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Core Java/06_Strings_Java/MethodsInStrings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Core Java/06_Strings_Java/SringBuffer.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Core Java/06_Strings_Java/SringBuffer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Core Java/08_ArrayList_Java/Basics.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Core Java/08_ArrayList_Java/Basics.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Core Java/10_Methods-Java/tempCodeRunnerFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Core Java/11_OOP_java/CallByReference.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Core Java/11_OOP_java/CallByReference.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Core Java/11_OOP_java/ToString_Override.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Core Java/11_OOP_java/ToString_Override.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Core Java/12_Inheritance_Java/Inherit_Basics/SuperConstructors.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Core Java/12_Inheritance_Java/Inherit_Basics/SuperConstructors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Core Java/12_Inheritance_Java/Inherit_Basics/SuperKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Core Java/12_Inheritance_Java/Inherit_Basics/SuperKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Hibernate/HibernateORM/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Hibernate/HibernateORM/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rods/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rods/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rods/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rods/Computer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rods/Config/AppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rods/Config/AppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rods/Desktop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rods/Desktop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rods/Laptop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rods/Laptop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/rods/Programmer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/rods/Programmer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,30 +56,30 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 3
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
   <component name="ProjectId" id="332qKazieC5izxfBb9RcKXVBdvL" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.App.executor": "Run",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.App.executor&quot;: &quot;Run&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.rods" />
@@ -108,7 +100,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1758525453155</updated>
-      <workItem from="1758525453985" duration="779000" />
+      <workItem from="1758525453985" duration="3211000" />
+      <workItem from="1758606269062" duration="92000" />
+      <workItem from="1758606479418" duration="246000" />
+      <workItem from="1758607055703" duration="255000" />
+      <workItem from="1758609242378" duration="34000" />
     </task>
     <servers />
   </component>

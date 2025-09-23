@@ -39,10 +39,7 @@ Class: If you are naming any class then it should be a noun and so should be nam
 Interface: If you are naming an interface, it should look like an adjective such as consider the existing ones: Runnable, Serializable, etc. Try to use ‘able’ at the end, yes it is said to try as there are no hard and fast bound rules as if we do consider an inbuilt interface such as ‘Remote’, it is not having ble at the end. Consider if you are supposed to create an interface to make read operation then it is suggested as per naming conventions in java to name a similar likely ‘Readable’ interface.
 Methods: Now if we do look closer a method is supposed to do something that it does contains in its body henceforth it should be a verb.
 Constants: As the name suggests it should look like as we read it looks like it is fixed for examples PI, MAX_INT, MIN_INT, etc as follows.
-
-
-
-        */
+*/
 
 
 

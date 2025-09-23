@@ -1,6 +1,6 @@
 import java.util.*;
 /*--. Header Files
- *  It is important to note that toString() --. is a method which is implicitly executed 
+ *  It is important to note that toString() --> is a method which is implicitly executed 
  * when we print the name of instance varible using Syso. Which prints the address of the object 
  * / instance variable however it is possible to print all the attributes as per the wish of 
  * the programmer in the order commanded . But first we will have to overide this method and then

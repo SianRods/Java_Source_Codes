@@ -1,7 +1,7 @@
 public class SuperConstructors {
 	public static void main (String args[]){
 		B b1 = new B(2);
-		b1.printMessage();
+		// b1.printMessage();
 	}
 }
 

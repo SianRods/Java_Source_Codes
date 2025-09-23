@@ -28,7 +28,7 @@ public class Basics {
         }
 
         // In order to overwrite Data we can use .set(index,Data_Type) --> Method
-        names.set(2, "Shilank Sir");
+        names.set(2, " Sir :) ");
         // We can also directly print the ArrayList using Object Name Where Additional
         // Cuurly Brackets are also Applied
         System.out.println(names);

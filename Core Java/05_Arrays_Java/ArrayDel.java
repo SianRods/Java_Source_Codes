@@ -12,9 +12,9 @@ public class ArrayDel {
             System.out.println("Enter the Element :" + (i + 1));
             arr[i] = sc.nextInt();
         }
-        
+
         // Printing Array
-        for (int k = 0; k < 5; k++) { 
+        for (int k = 0; k < 5; k++) {
             System.out.println("The " + (k + 1) + "Element is : ");
             System.out.println(arr[k]);
         }
@@ -25,6 +25,7 @@ public class ArrayDel {
                 index = i;
             }
         }
+
         // Shifting all the elements to Selected Element Series
         for (int i = index; i <= 5 - 1; i++) {
             // Overwriting the Selected Elements

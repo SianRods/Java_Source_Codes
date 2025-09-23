@@ -9,6 +9,7 @@ public class SwitchCase {
 		switch(name ){
 			case "sian": System.out.println("Hello Sian !!");
 			break;
+			// if we don't break all the below statements will also be executed
 			case null : System.out.println("Kindly Enter a Name : ");
 			break ;
 			default : System.out.println("This is a Switch Case !!");

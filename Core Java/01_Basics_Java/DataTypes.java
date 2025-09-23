@@ -5,7 +5,7 @@ class DataTypes {
         System.out.println("Different Data Types in Java ");
         int a = 10 ;
         char c = '&';
-        // Here note that in case of a float Data Types an extra 'f' has to be attached 
+        // Here note that in case of a float Data Type an extra 'f' has to be attached 
         float ref = 15.5456f;
         double pie = 3.1445354564574;
         System.out.println(a);

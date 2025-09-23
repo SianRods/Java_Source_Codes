@@ -1,4 +1,3 @@
-
 // Including header file for inputting an object 
 
 import java.util.*;

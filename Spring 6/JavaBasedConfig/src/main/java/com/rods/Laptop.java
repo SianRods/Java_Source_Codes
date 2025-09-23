@@ -1,5 +1,8 @@
 package com.rods;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Laptop implements Computer {
 
     public void Laptop() {

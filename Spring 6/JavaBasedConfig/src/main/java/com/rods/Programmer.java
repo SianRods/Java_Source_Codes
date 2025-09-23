@@ -1,13 +1,25 @@
 package com.rods;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
+@Component
+@Scope("prototype")
 public class Programmer {
 
-    private int age;
+
+    @Value("31")
+    public int age;
+    @Autowired()
+    @Qualifier("laptop")
     private Computer computer;
 
+
     public Programmer() {
-        System.out.println("Programmer Object Created");
+        System.out.println("Programmer Object Created...");
     }
 
 //	@ConstructorProperties({"age","lap"})
@@ -18,6 +30,7 @@ public class Programmer {
 //	}
 
     public int getAge() {
+        System.out.println("Age setter has been called by the value annotation(stereotype annotation)");
         return age;
     }
 
