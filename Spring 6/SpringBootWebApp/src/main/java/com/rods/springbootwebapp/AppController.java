@@ -5,10 +5,7 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.HttpServletBean;
 
 @Controller
@@ -28,8 +25,39 @@ public class AppController {
     }
 
 
-    /*
+    @RequestMapping("/addAlien")
+    public String addAlien() {
 
+        return "addAlien";
+    }
+
+    @RequestMapping("acknowledgeAlien")
+    public String acknowledgeAlien(@ModelAttribute Alien alien) {
+        return "acknowledgeAlien";
+    }
+
+    // Used for rendering a specific variable/s from the backend to the frontend
+    @ModelAttribute("course")
+    public String getCourse(){
+        // can be dynamic and fetched depending upon the object
+        return  "Java";
+    }
+
+
+    /*
+    Following are the approaches to store the data received from the frontend into the object
+
+    1] Creating a new object internally and taking in all the attributes using @RequestParam()
+    ==> Problem if the object has many attributes == "unecessary waste processing individually each attribute"
+
+    2] Use of Model Attribute (@ModelAttribute("name_rendered_on_frontend"))
+    by mentioning or not mentioning this annotation the attribute of the received object will be automatically set
+
+     */
+
+
+
+    /*
      The whole point of using a ModelViewController(MVC) architecture is to have a manageable code
      where each of the part is responsible for processing request , updating model and redenring the
      view ==> Decoupling from httpservletrequest can be done using ==> request parameter
@@ -41,7 +69,7 @@ public class AppController {
     management  ==>
 
     @RequestMapping("/acknowledge")
-    public ModelView acknowledge(@RequestParam("name") String fullname, ModelView mv) {
+    public ModelandView acknowledge(@RequestParam("name") String fullname, ModelandView mv) {
         mv.addAttribute("fullname");
         mv.addView("acknowledge");
     }
@@ -76,7 +104,6 @@ public class AppController {
         // Whenever i add the above data to an ongoing session the same data can be accessed through the session in jsp files
     return "acknowledge.jsp";
     }
-
 
      */
 
