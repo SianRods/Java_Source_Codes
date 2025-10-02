@@ -9,6 +9,7 @@ import java.time.LocalDate;
 @Entity
 @Table(name = "internships")
 @Data
+
 public class Internship {
 
     @Id
@@ -17,7 +18,6 @@ public class Internship {
     private String title;
     private String location;
     private String company;
-    private String Location;
     private LocalDate deadline;
 
     @ManyToOne

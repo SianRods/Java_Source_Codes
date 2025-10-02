@@ -1,18 +1,20 @@
 package com.rods.internshipmanagement.model;
 
 import jakarta.persistence.*;
+import lombok.Data;
 
 import java.awt.*;
 import java.time.LocalDateTime;
 
 @Entity
+@Data
 @Table(name = "applications",
         uniqueConstraints = @UniqueConstraint(columnNames = {"student_id", "internship_id"})
 )
 public class Application {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long application_id;
+    private Long application_id;
 
     @ManyToOne
     @JoinColumn(name = "student_id", nullable = false)

@@ -9,11 +9,14 @@ import java.util.Optional;
 
 @Repository
 public interface InternshipRepository extends JpaRepository<Internship, Long> {
-    Optional<User> findByTitle(String title);
+    List<Internship> findByTitleStartingWith(String title);
 
-    Optional<Internship> findById(int internshipID);
+    Optional<Internship> findByInternshipID(long internshipID);
+    // Note that some of the common crud operations are already defined in the JpaRepository
 
-    boolean addInternship(Internship internship);
+    List<Internship> findByCompany(String company);
 
-    List<Internship> getAllInternships();
+    List<Internship> findByLocation(String location);
+
+
 }

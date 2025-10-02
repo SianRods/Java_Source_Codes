@@ -24,7 +24,7 @@ public class User {
     @Enumerated(EnumType.STRING)
     private Role role;
 
-    private enum Role {
+    public enum Role {
         Student, TPC
     }
 
