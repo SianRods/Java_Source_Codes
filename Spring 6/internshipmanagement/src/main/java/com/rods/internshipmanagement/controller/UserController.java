@@ -10,6 +10,7 @@ import java.util.Optional;
 
 @RestController
 public class UserController {
+
     @Autowired
     private UserService service;
 
@@ -24,18 +25,15 @@ public class UserController {
         return service.getAllUsers();
     }
 
-
     @GetMapping("/user/{userID}")
     public Optional<User> getUser(@PathVariable long userID) {
         return service.getUserByID(userID);
     }
-
     // Both the Endpoints should not have same url and with same method
     @GetMapping("/Role/{role}")
     public List<User> getStudents(@PathVariable User.Role role) {
         return service.getAllSpecificUsers(role);
     }
-
 
     @DeleteMapping("/user/{userID}")
     public boolean deleteUserByID(@PathVariable long userID) {

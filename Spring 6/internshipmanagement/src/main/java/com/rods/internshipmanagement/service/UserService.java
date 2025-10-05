@@ -5,6 +5,7 @@ import com.rods.internshipmanagement.repository.*;
 import com.rods.internshipmanagement.model.*;
 import com.rods.internshipmanagement.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,6 +18,8 @@ public class UserService {
     //creating a repo instant
     @Autowired
     private UserRepository repo;
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     // Note that
 
@@ -31,6 +34,9 @@ public class UserService {
 
 
     public boolean saveUser(User user) {
+        //first encode the password before saving the users
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
+
         repo.save(user);
         return true;
     }
@@ -43,8 +49,6 @@ public class UserService {
                 break;
             }
         }
-
-
         return true;
     }
 
