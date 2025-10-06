@@ -72,7 +72,6 @@ public class ProductController {
 
     }
 
-
     // Using the update and delete method for all the products which have been listed on the site
     // Always check the frontend code for what should be the possible return type of the url in react (expected by the client)
     @PutMapping("/product/{id}")
