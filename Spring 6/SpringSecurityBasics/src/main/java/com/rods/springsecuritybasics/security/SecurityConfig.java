@@ -1,24 +1,22 @@
 package com.rods.springsecuritybasics.security;
 
+import com.rods.springsecuritybasics.security.filter.JwtFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.Customizer;
-import org.springframework.security.config.annotation.authentication.configurers.userdetails.DaoAuthenticationConfigurer;
+import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-import org.springframework.security.config.annotation.web.configurers.AuthorizeHttpRequestsConfigurer;
-import org.springframework.security.config.annotation.web.configurers.CsrfConfigurer;
-import org.springframework.security.config.annotation.web.reactive.EnableWebFluxSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
-import org.springframework.security.core.userdetails.User;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
-import org.springframework.security.crypto.password.NoOpPasswordEncoder;
-import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 
 @Configuration
@@ -26,6 +24,8 @@ import org.springframework.security.web.SecurityFilterChain;
 public class SecurityConfig {
     @Autowired
     private UserDetailsService userDetailsService;
+    @Autowired
+    private JwtFilter jwtFilter;
 
 
     @Bean
@@ -35,13 +35,18 @@ public class SecurityConfig {
         // Here we are using the lambda function and disabling the csrf
         http
                 .csrf(customizer -> customizer.disable())
-                .authorizeHttpRequests(request -> request.anyRequest().authenticated())
-//                .formLogin(Customizer.withDefaults())
+                .authorizeHttpRequests(request ->
+                        request.requestMatchers("register", "login").permitAll()
+                                .anyRequest().authenticated())
+                //.formLogin(Customizer.withDefaults())
                 .httpBasic(Customizer.withDefaults())
                 .sessionManagement(session ->
-                        session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
+                        // here we are also going to make the session stateless ==> each new request will have new sessionID
+                        // keeping it STATLESS while implementing the JWT
+                        session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+                // here we are going to add a Custom JWT filter before the default UsernamePasswordAuthenticationFilterw
 
-        // here we are also going to make the session stateless ==> each new request will have new sessionID
+                .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
 
 
         return http.build();
@@ -54,10 +59,21 @@ public class SecurityConfig {
         // DAO (Data access object for speaking with the database)
         DaoAuthenticationProvider provider = new DaoAuthenticationProvider();
         provider.setUserDetailsService(userDetailsService);
-        provider.setPasswordEncoder(NoOpPasswordEncoder.getInstance());
+        provider.setPasswordEncoder(new BCryptPasswordEncoder(11));
         return provider;
 
 
+    }
+
+    // here we will be congiguring the authentication manager bean required to validate user during "/login"
+    @Bean
+    public AuthenticationManager authenticationManager(AuthenticationConfiguration config) throws Exception {
+        return config.getAuthenticationManager();
+    }
+
+    @Bean
+    public BCryptPasswordEncoder bycrptEncoder() {
+        return new BCryptPasswordEncoder(11);
     }
 
 

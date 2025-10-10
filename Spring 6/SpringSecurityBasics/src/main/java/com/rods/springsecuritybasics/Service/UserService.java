@@ -1,0 +1,23 @@
+package com.rods.springsecuritybasics.Service;
+
+import com.rods.springsecuritybasics.model.User;
+import com.rods.springsecuritybasics.repository.UserRepo;
+import org.hibernate.annotations.SecondaryRow;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.stereotype.Service;
+
+@Service
+public class UserService {
+    @Autowired
+    private UserRepo userRepo;
+    @Autowired
+    private BCryptPasswordEncoder encoder;
+
+    public User registerUser(User user) {
+        user.setPassword(encoder.encode(user.getPassword()));
+        return userRepo.save(user);
+    }
+
+
+}

@@ -1,10 +1,9 @@
 package com.rods.springsecuritybasics.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Generated;
 import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -15,6 +14,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 @Table(name = "users")
 public class User {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String username;
     private String password;

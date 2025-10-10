@@ -11,8 +11,8 @@ import java.util.Collections;
 import java.util.List;
 
 // Note that we will be using the below class in order to convert User into UserDetails format
-
 public class UserPrincipal implements UserDetails {
+
     private User user;
 
     public UserPrincipal(User user) {
